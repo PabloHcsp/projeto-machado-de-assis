@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+/*#FA6646           #DE433E        #F55192      #DE3ECE        #D346FA https://color.adobe.com/pt/create/color-wheel
+*/
+:root{
+    --cor1:#FA6646;
+    --cor2:#DE433E;
+    --cor3:#F55192;
+    --cor4:#DE3ECE;
+    --cor5:#D346FA;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor1);
+    font-family: 'Ubuntu', sans-serif;/*https://fonts.google.com/*/
+}
+
+header{
+    background-image:linear-gradient(to bottom,var(--cor3),var(--cor2));/*direção, primeira cor, segunda cor.*/
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > h1{
+    color:black;
+    font-weight: 900px;/*peso da fonte, espessura do negrito*/
+    margin-bottom: 8px;/*espaço até o proximo elemento, no caso o inferior*/
+}
+header > p {
+    color:black;
+}
+/*header p{
+    color:var (--vermelho);
+}*/
+nav{
+    background-color: var(--cor1);
+    padding: 5px;/*mesmo espaçamento para os 4 lados*/
+    box-shadow: 0px -15px 20px 7px black;
+    text-align: center;
+}
+nav > a {
+    color:purple;
+    padding:10px;
+    text-decoration: none;/*sublinhado none overline underline*/
+    font-weight: bold;
+    border-radius: 100px;/*arredondamento das vertices*/
+    transition-duration: 0.5s;/*duração da transição para outro estado*/
+}
+nav > a:hover{
+    color:white;
+    font-size: 15px;
+    background-color: grey;
+}
+main{
+    background-color: #ffffff;
+    min-width: 320px;/*largura mínima*/
+    max-width: 1000px;/*largura máxima*/
+    margin:auto;/*nesse contexto para centralizar o elemento*/
+    margin-top:5px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 0px 0px 0px;/*sombra da caixa*/
+    text-align: center;
+}
+main h2{
+    background-image: linear-gradient(t gight, var(--cor1),transparent);
+    text-align: center;/* alinhamento de texto centralizado*/
+}
+main p{
+    font-size:18px;
+    text-align: justify;/*alinhamento de texto center left right justify*/
+    text-indent: 40px;/*espaçamento de paragrafo*/
+    margin: 15px;/*fora do elemento, 15px (top,bottom) 0 (left,right)*/
+    line-height: 1.5em;/*altura da linha*/
+}
+img,iframe{
+    width:50%;
+    border:2px solid black
+}
+iframe{
+    margin-bottom: 20px;
+    border:2px;
+}
+figcaption{
+    font-size:12px;
+}
+aside{
+    background-color:var(--cor1);
+    padding: 10ox;
+    border-radius: 5px;
+    margin:-15px -10px 0px -10px;
+}
+aside > ul{
+    list-style-position: inside; /*coloca os marcadores da lista dentro da caixa do elemento*/
+    text-align: justify;
+    padding:10px
+    
+}
+
+aside > h3{
+    background-color: var(--cor2);
+    padding: 10px;
+    margin:-15px 0px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+footer{
+    text-align: justify;
+    font-size: 12px;
+}
